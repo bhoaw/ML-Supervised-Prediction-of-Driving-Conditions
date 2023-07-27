@@ -34,90 +34,19 @@ data   = pd.concat([data11, data12, data21, data22], ignore_index=True)
 
 data
 ```
-
-<div class="output execute_result" execution_count="4">
-
-           AltitudeVariation  VehicleSpeedInstantaneous  VehicleSpeedAverage  \
-    0                    NaN                   0.000000                  NaN   
-    1                    NaN                   0.000000                  NaN   
-    2                    NaN                        NaN                  NaN   
-    3                    NaN                        NaN                  NaN   
-    4                    NaN                   0.000000                  NaN   
-    ...                  ...                        ...                  ...   
-    24952           1.000000                  28.799999            28.559999   
-    24953           1.699997                  30.599998            28.529999   
-    24954           1.800003                  29.699999            28.499999   
-    24955           2.100006                  29.699999            28.409999   
-    24956           1.500000                  33.299999            28.349999   
-
-           VehicleSpeedVariance  VehicleSpeedVariation  LongitudinalAcceleration  \
-    0                       NaN                    NaN                    0.0156   
-    1                       NaN                    NaN                    0.0156   
-    2                       NaN                    NaN                    0.0273   
-    3                       NaN                    NaN                    0.0391   
-    4                       NaN                    NaN                    0.0469   
-    ...                     ...                    ...                       ...   
-    24952             57.190571               3.600000                   -0.0292   
-    24953             57.010266               1.799999                   -0.0304   
-    24954             56.883045              -0.900000                   -0.1684   
-    24955             56.160910               0.000000                   -0.0644   
-    24956             55.340843               3.600000                   -0.1817   
-
-           EngineLoad  EngineCoolantTemperature  ManifoldAbsolutePressure  \
-    0       25.490196                      64.0                     100.0   
-    1       25.490196                      64.0                     100.0   
-    2       25.882353                      64.0                     100.0   
-    3       25.882353                      64.0                     100.0   
-    4       25.882353                      65.0                     100.0   
-    ...           ...                       ...                       ...   
-    24952   25.882353                      81.0                     115.0   
-    24953   11.764706                      81.0                     106.0   
-    24954   98.039215                      81.0                     106.0   
-    24955   79.607841                      80.0                     112.0   
-    24956   80.000000                      80.0                     113.0   
-
-           EngineRPM  MassAirFlow  IntakeAirTemperature  VerticalAcceleration  \
-    0          801.0     7.850000                  22.0               -0.0078   
-    1          803.0     7.890000                  22.0               -0.0156   
-    2          800.0     7.770000                  22.0               -0.0273   
-    3          798.0     7.770000                  22.0               -0.0273   
-    4          798.0     7.940000                  22.0               -0.0312   
-    ...          ...          ...                   ...                   ...   
-    24952     1755.5    20.469999                  25.0               -0.1661   
-    24953      736.5    17.740000                  25.0               -0.1987   
-    24954     1254.0     9.520000                  24.0               -0.1156   
-    24955     1254.0    14.910000                  23.0               -0.0760   
-    24956     1363.5    15.330000                  23.0               -0.0605   
-
-           FuelConsumptionAverage      roadSurface                 traffic  \
-    0                         NaN  SmoothCondition  LowCongestionCondition   
-    1                         NaN  SmoothCondition  LowCongestionCondition   
-    2                         NaN  SmoothCondition  LowCongestionCondition   
-    3                         NaN  SmoothCondition  LowCongestionCondition   
-    4                         NaN  SmoothCondition  LowCongestionCondition   
-    ...                       ...              ...                     ...   
-    24952               14.578003  SmoothCondition  LowCongestionCondition   
-    24953               14.585642  SmoothCondition  LowCongestionCondition   
-    24954               14.547294  SmoothCondition  LowCongestionCondition   
-    24955               14.546828  SmoothCondition  LowCongestionCondition   
-    24956               14.554068  SmoothCondition  LowCongestionCondition   
-
-            drivingStyle  
-    0      EvenPaceStyle  
-    1      EvenPaceStyle  
-    2      EvenPaceStyle  
-    3      EvenPaceStyle  
-    4      EvenPaceStyle  
-    ...              ...  
-    24952  EvenPaceStyle  
-    24953  EvenPaceStyle  
-    24954  EvenPaceStyle  
-    24955  EvenPaceStyle  
-    24956  EvenPaceStyle  
-
-    [24957 rows x 17 columns]
-
-</div>
+|       | AltitudeVariation | VehicleSpeedInstantaneous | VehicleSpeedAverage | VehicleSpeedVariance | VehicleSpeedVariation | LongitudinalAcceleration | EngineLoad | EngineCoolantTemperature | ManifoldAbsolutePressure | EngineRPM | MassAirFlow | IntakeAirTemperature | VerticalAcceleration | FuelConsumptionAverage |     roadSurface |                traffic |  drivingStyle |
+|------:|------------------:|--------------------------:|--------------------:|---------------------:|----------------------:|-------------------------:|-----------:|-------------------------:|-------------------------:|----------:|------------:|---------------------:|---------------------:|-----------------------:|----------------:|-----------------------:|--------------:|
+|   0   | NaN               | 0.000000                  | NaN                 | NaN                  | NaN                   | 0.0156                   | 25.490196  | 64.0                     | 100.0                    | 801.0     | 7.850000    | 22.0                 | -0.0078              | NaN                    | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+|   1   | NaN               | 0.000000                  | NaN                 | NaN                  | NaN                   | 0.0156                   | 25.490196  | 64.0                     | 100.0                    | 803.0     | 7.890000    | 22.0                 | -0.0156              | NaN                    | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+|   2   | NaN               | NaN                       | NaN                 | NaN                  | NaN                   | 0.0273                   | 25.882353  | 64.0                     | 100.0                    | 800.0     | 7.770000    | 22.0                 | -0.0273              | NaN                    | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+|   3   | NaN               | NaN                       | NaN                 | NaN                  | NaN                   | 0.0391                   | 25.882353  | 64.0                     | 100.0                    | 798.0     | 7.770000    | 22.0                 | -0.0273              | NaN                    | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+|   4   | NaN               | 0.000000                  | NaN                 | NaN                  | NaN                   | 0.0469                   | 25.882353  | 65.0                     | 100.0                    | 798.0     | 7.940000    | 22.0                 | -0.0312              | NaN                    | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+|  ...  | ...               | ...                       | ...                 | ...                  | ...                   | ...                      | ...        | ...                      | ...                      | ...       | ...         | ...                  | ...                  | ...                    | ...             | ...                    | ...           |
+| 24952 | 1.000000          | 28.799999                 | 28.559999           | 57.190571            | 3.600000              | -0.0292                  | 25.882353  | 81.0                     | 115.0                    | 1755.5    | 20.469999   | 25.0                 | -0.1661              | 14.578003              | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+| 24953 | 1.699997          | 30.599998                 | 28.529999           | 57.010266            | 1.799999              | -0.0304                  | 11.764706  | 81.0                     | 106.0                    | 736.5     | 17.740000   | 25.0                 | -0.1987              | 14.585642              | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+| 24954 | 1.800003          | 29.699999                 | 28.499999           | 56.883045            | -0.900000             | -0.1684                  | 98.039215  | 81.0                     | 106.0                    | 1254.0    | 9.520000    | 24.0                 | -0.1156              | 14.547294              | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+| 24955 | 2.100006          | 29.699999                 | 28.409999           | 56.160910            | 0.000000              | -0.0644                  | 79.607841  | 80.0                     | 112.0                    | 1254.0    | 14.910000   | 23.0                 | -0.0760              | 14.546828              | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
+| 24956 | 1.500000          | 33.299999                 | 28.349999           | 55.340843            | 3.600000              | -0.1817                  | 80.000000  | 80.0                     | 113.0                    | 1363.5    | 15.330000   | 23.0                 | -0.0605              | 14.554068              | SmoothCondition | LowCongestionCondition | EvenPaceStyle |
 
 </div>
 
