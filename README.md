@@ -2,25 +2,6 @@
 The aim of this project was to predict driving style, road conditions or traffic state based on sensor inputs directly from a vehicle. 
 Two data-sets were used, an Opel Corsa & a Peugeot 207.
 
----
-jupyter:
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.8.15
-  nbformat: 4
-  nbformat_minor: 5
----
 
 <div class="cell code" execution_count="13" scrolled="true" tags="[]">
 
@@ -332,26 +313,8 @@ for i in [14, 15, 16]:
 ``` python
 results_df
 ```
-
-<div class="output execute_result" execution_count="25">
-
-                   SVC Acc  SVC Bal Acc  SVC F1 Mean    LR Acc  LR Bal Acc  \
-    roadSurface   0.782652     0.737606     0.729651  0.778446    0.715456   
-    traffic       0.775441     0.468239     0.455450  0.782051    0.487309   
-    drivingStyle  0.881611     0.500000     0.468540  0.880409    0.512502   
-
-                  LR F1 Mean  
-    roadSurface     0.719583  
-    traffic         0.499387  
-    drivingStyle    0.496514  
-
-</div>
-
-</div>
-
-<div class="cell code">
-
-``` python
-```
-
-</div>
+|              |  SVC Acc | SVC Bal Acc | SVC F1 Mean |   LR Acc | LR Bal Acc | LR F1 Mean |
+|-------------:|---------:|------------:|------------:|---------:|-----------:|-----------:|
+|  roadSurface | 0.782652 | 0.737606    | 0.729651    | 0.778446 | 0.715456   | 0.719583   |
+|    traffic   | 0.775441 | 0.468239    | 0.455450    | 0.782051 | 0.487309   | 0.499387   |
+| drivingStyle | 0.881611 | 0.500000    | 0.468540    | 0.880409 | 0.512502   | 0.496514   |
